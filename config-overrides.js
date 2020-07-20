@@ -7,6 +7,7 @@ module.exports = function override(config) {
       components: path.resolve(__dirname, "src", "app", "components"),
       screens: path.resolve(__dirname, "src", "app", "screens"),
       assets: path.resolve(__dirname, "src", "assets"),
+      api: path.resolve(__dirname, "src", "core", "api"),
       node_modules: path.resolve(__dirname, "node_modules"),
     },
   };

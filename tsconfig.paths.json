@@ -4,7 +4,8 @@
     "paths": {
       "components": ["app/components"],
       "screens": ["app/screens"],
-      "assets": ["assets/"]
+      "assets": ["assets/"],
+      "api": ["core/api"]
     }
   }
 }
