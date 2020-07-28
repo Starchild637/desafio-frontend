@@ -1,20 +1,17 @@
 import React from "react";
-import rain from "assets/images/rain.jpg";
+import sunny from "assets/images/sunny.jpeg";
 
-const BgWeather: React.FC<{ type: string }> = ({ type, children }) => {
-  const getBgByType = () => {
-    return rain;
-  };
-
+const BgWeather: React.FC<{ type: any }> = ({ type = sunny, children }) => {
+  console.log(type);
   return (
     <div
       style={{
-        backgroundImage: `url(${getBgByType()})`,
+        backgroundImage: `url(${type})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        border: "1px solid red",
         minHeight: "100vh",
+        border: "0.1px solid transparent",
       }}
     >
       {children}

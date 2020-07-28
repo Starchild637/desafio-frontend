@@ -5,7 +5,10 @@
       "components": ["app/components"],
       "screens": ["app/screens"],
       "assets": ["assets/"],
-      "api": ["core/api"]
+      "api": ["core/api"],
+      "utils": ["utils/"],
+      "store": ["core/redux/store"],
+      "actions": ["core/redux/actions"]
     }
   }
 }

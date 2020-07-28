@@ -1,10 +1,10 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap");
+
+body,
+html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  font-family: "Lora", sans-serif;
 }
 
 code {
@@ -15,13 +15,12 @@ code {
 .default-card {
   width: 100%;
   height: 100%;
-  min-height: 180px;
-  background-color: midnightblue;
+  background-color: rgba(120, 120, 120, 0.5);
   color: #fff;
+  border-radius: 16px;
 }
 
 .report-container {
-  border: 1px solid red;
   width: 100%;
 }
 
@@ -34,7 +33,7 @@ code {
 .custom-input-icon {
   position: absolute;
   right: 10px;
-  top: 5px;
+  top: 7px;
   color: #fff;
 }
 
@@ -43,16 +42,41 @@ input:focus {
   outline: none;
 }
 
-input,
 .custom-input,
 .custom-input:focus {
   background-color: transparent;
   border-radius: 30px;
   width: 100%;
-  padding-left: 10px;
+  padding-left: 35%;
   color: #fff;
   border: 1px solid #fff;
   box-shadow: none;
+  height: 32px;
+  appearance: none;
+}
+
+.custom-input[type="text"] {
+  padding-top: 3px;
+  appearance: none;
+}
+
+select {
+  appearance: none;
+  text-indent: 0.01px;
+  text-overflow: "";
+}
+
+.custom-select[type="text"],
+.custom-select[type="text"]:focus {
+  position: absolute;
+  background-color: transparent;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  width: 33%;
+  color: #fff;
+  border: 1px solid #fff;
+  box-shadow: none;
+  height: 32px;
 }
 
 .btn.focus,
